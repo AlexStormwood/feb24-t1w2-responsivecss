@@ -1,0 +1,9 @@
+body {
+	background-color: rgb(145, 214, 203);
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		background-color: palegreen;
+	}
+}
