@@ -10,7 +10,18 @@ body {
 	background-color: rgb(145, 214, 203);
 	/* font-family: Arial, Helvetica, sans-serif; */
 	font-family: "Whatever We Want";
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* align-items: center; */
 }
+
+.nestedRow {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+}
+
 
 
 
@@ -23,16 +34,25 @@ h3 {
 	background-color: red;
 }
 
+
 .column {
-	width: 100%;
+	width: 500px;
 }
 
+.row {
+	display: flex;
+	flex-direction: column;
+}
+
+
 /* Clear floats after the columns */
+/* 
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
-}
+}  */
+
 
 
 
@@ -42,14 +62,19 @@ h3 {
 		background-color: palegreen;
 	}
 
-	h3 {
-		display: none;
+	.row {
+		display: flex;
+		flex-direction: row;
 	}
 
+	/* h3 {
+		display: none;
+	} */
+
 	/* Create three equal columns that float next to each other */
-	.column {
+	/* .column {
 		float: left;
 		width: 33.33%;
-	}
+	} */
 
 }
